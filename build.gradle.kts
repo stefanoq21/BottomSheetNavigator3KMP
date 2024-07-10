@@ -8,4 +8,6 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform) apply false
     alias(libs.plugins.jetbrainsKotlinSerialization)
     alias(libs.plugins.jetbrains.kotlin.jvm) apply false
+    id("com.vanniktech.maven.publish") version "0.29.0"
+
 }

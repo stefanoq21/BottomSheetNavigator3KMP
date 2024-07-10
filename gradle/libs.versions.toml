@@ -14,7 +14,7 @@ compose-plugin = "1.7.0-alpha01"
 junit = "4.13.2"
 kotlin = "2.0.0"
 navigationCompose="2.8.0-alpha08"
-material3Navigation = "0.0.3"
+material3Navigation = "0.0.1"
 kotlinxSerializationJson = "1.7.1"
 jetbrainsKotlinJvm = "1.9.0"
 
@@ -30,7 +30,7 @@ androidx-material = { group = "com.google.android.material", name = "material", 
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
-material3-navigation = { group = "io.github.stefanoq21", name = "material3-navigation", version.ref = "material3Navigation" }
+material3-navigation = { group = "io.github.stefanoq21", name = "material3-navigation-kmp", version.ref = "material3Navigation" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 
 [plugins]
