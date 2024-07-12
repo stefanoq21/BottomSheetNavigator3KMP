@@ -59,4 +59,8 @@ jobs:
           -Psigning.gnupg.keyName='${{secrets.OSSRH_GPG_SECRET_KEY_ID}}'
           -PsonatypeUsername='${{secrets.OSSRH_USERNAME}}'
           -PsonatypePassword='${{secrets.OSSRH_PASSWORD}}'
+          -PmavenCentralUsername='${{secrets.OSSRH_USERNAME}}'
+          -PmavenCentralPassword='${{secrets.OSSRH_PASSWORD}}'
+          -Psigning.keyId='${{secrets.OSSRH_GPG_SECRET_KEY_ID}}'
+          -Psigning.password='${{secrets.OSSRH_GPG_SECRET_KEY_PASSWORD}}'
 
