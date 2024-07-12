@@ -30,15 +30,6 @@ dependencyResolutionManagement {
             }
         }
         mavenCentral()
-        maven {
-            url = uri("https://maven.pkg.github.com/stefanoq21/BottomSheetNavigator3")
-            credentials {
-                val properties = Properties()
-                properties.load(file("local.properties").reader())
-                username = properties.getProperty("githubUserName") as String
-                password = properties.getProperty("githubToken") as String
-            }
-        }
     }
 }
 
