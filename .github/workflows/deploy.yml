@@ -20,16 +20,16 @@ jobs:
     strategy:
       matrix:
         include:
-          - target: publishIosArm64PublicationToMavenCentralRepository
+          - target: publishAllPublicationsToMavenCentralRepository
             os: macos-latest
-          - target: publishAndroidReleasePublicationToMavenCentralRepository
-            os: ubuntu-latest
-          - target: publishJvmPublicationToMavenCentralRepository
-            os: ubuntu-latest
+          #- target: publishAndroidReleasePublicationToMavenCentralRepository
+          #  os: ubuntu-latest
+         # - target: publishDesktopPublicationToMavenCentralRepository
+          #  os: ubuntu-latest
          # - target: publishLinuxX64PublicationToMavenCentralRepository
          #   os: ubuntu-latest
-          - target: publishKotlinMultiplatformPublicationToMavenCentralRepository
-            os: ubuntu-latest
+         # - target: publishKotlinMultiplatformPublicationToMavenCentralRepository
+          #  os: ubuntu-latest
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
