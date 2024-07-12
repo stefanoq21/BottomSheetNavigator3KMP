@@ -49,8 +49,8 @@ kotlin {
             implementation(libs.navigation.compose)
 
             implementation(libs.kotlinx.serialization.json)
-            //implementation(project(":material3-navigation-kmp"))
-            implementation(libs.material3.navigation)
+            implementation(project(":material3-navigation-kmp"))
+            //implementation(libs.material3.navigation)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
