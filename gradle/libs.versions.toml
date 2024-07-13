@@ -14,7 +14,7 @@ compose-plugin = "1.7.0-alpha01"
 junit = "4.13.2"
 kotlin = "2.0.0"
 navigationCompose="2.8.0-alpha08"
-material3Navigation = "0.0.1"
+material3Navigation = "0.0.2"
 kotlinxSerializationJson = "1.7.1"
 jetbrainsKotlinJvm = "1.9.0"
 
