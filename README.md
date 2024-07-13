@@ -1,5 +1,4 @@
-# Material3 BottomSheet Navigation for KMP (not builded for Apple devices, in this case I suggest to copy the entire module directly in your project)
-This is my first experiment of a KMP library, unfortunately at the moment I don't have a mac to make the library available also for Apple devices.
+# Material3 BottomSheet Navigation for KMP
 This library provides a navigation solution for Compose multiplatform projects using Material3 BottomSheets. It allows you to define your BottomSheet as navigation routes, eliminating the need for the `material` 
 library. This simplifies your app's dependencies and ensures a consistent Material3 experience.
 
@@ -15,7 +14,7 @@ Add the dependencies to your `libs.versions.toml`
 [versions]
 ...
 navigationCompose="2.8.0-alpha08"
-material3Navigation = "0.0.1"
+material3Navigation = "X.X.X" #follow the release version 
 
 [libraries]
 ...
