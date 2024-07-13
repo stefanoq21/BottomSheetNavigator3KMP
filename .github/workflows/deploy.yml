@@ -46,7 +46,7 @@ jobs:
         gpg_private_key: ${{ secrets.OSSRH_GPG_SECRET_KEY }}
         passphrase: ${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }}
     - name: Generate secret file
-      run: gpg --export-secret-keys -o /Users/runner/.gnupg/secring.kbx
+      run: gpg --batch --passphrase ${{ secrets.OSSRH_GPG_SECRET_KEY_PASSWORD }} --export-secret-keys -o /Users/runner/.gnupg/secring.kbx
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
