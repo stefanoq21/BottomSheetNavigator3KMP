@@ -55,7 +55,7 @@ jobs:
       env:
         ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.SONATYPE_NEXUS_USERNAME }}
         ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.SONATYPE_NEXUS_PASSWORD }}
-        ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_PRIVATE_KEY }}
+        ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.PLUGIN_SECRET_KEY }}
         ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_PASSWORD }}
     - name: Gradle publish
       uses: gradle/gradle-build-action@ce999babab2de1c4b649dc15f0ee67e6246c994f
