@@ -2,6 +2,7 @@
 This library provides a navigation solution for Compose multiplatform projects using Material3 BottomSheets. It allows you to define your BottomSheet as navigation routes, eliminating the need for the `material` 
 library. This simplifies your app's dependencies and ensures a consistent Material3 experience.
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.stefanoq21/material3-navigation-kmp)](https://central.sonatype.com/search?q=io.github.stefanoq21)
 
 ## Implementation
 
