@@ -228,9 +228,6 @@ public open class BottomSheetNavigator(
                 animateToDismiss = {
                     scope
                         .launch { sheetState.hide() }
-                        .invokeOnCompletion {
-                            onDismissRequest()
-                        }
                 }
 
             }
@@ -267,8 +264,8 @@ public open class BottomSheetNavigator(
     }
 
     override fun popBackStack(popUpTo: NavBackStackEntry, savedState: Boolean) {
+        onDismissRequest()
         animateToDismiss()
-        //state.pop(popUpTo, savedState)
     }
 
     /**
