@@ -17,6 +17,7 @@
 package navigation
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.material3.BottomSheetDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalBottomSheet
@@ -40,6 +41,7 @@ fun ModalBottomSheetLayout(
     tonalElevation: Dp = BottomSheetDefaults.Elevation,
     scrimColor: Color = BottomSheetDefaults.ScrimColor,
     dragHandle: @Composable (() -> Unit)? = { BottomSheetDefaults.DragHandle() },
+    contentWindowInsets: @Composable () -> WindowInsets = { BottomSheetDefaults.windowInsets },
     content: @Composable () -> Unit,
 ) {
 
@@ -60,6 +62,7 @@ fun ModalBottomSheetLayout(
             tonalElevation = tonalElevation,
             scrimColor = scrimColor,
             dragHandle = dragHandle,
+            contentWindowInsets = contentWindowInsets
         )
     }
 }
